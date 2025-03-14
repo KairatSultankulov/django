@@ -1,7 +1,6 @@
 from django.apps import AppConfig
 
 
-class BooksConfig(AppConfig):
+class TagsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'books'
-    verbose_name = 'список книг'
+    name = 'tags'
