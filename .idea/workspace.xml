@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74d574d5-2776-4650-83de-b0763de1ae42" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/basket/confirm_delete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../second_month" beforeDir="false" afterPath="$PROJECT_DIR$/../second_month" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +82,8 @@
       <workItem from="1741942596511" duration="2676000" />
       <workItem from="1741952003779" duration="2345000" />
       <workItem from="1741954500732" duration="4928000" />
-      <workItem from="1742310138699" duration="328000" />
+      <workItem from="1742310138699" duration="2077000" />
+      <workItem from="1742551240768" duration="4105000" />
     </task>
     <servers />
   </component>

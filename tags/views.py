@@ -1,26 +1,29 @@
 from django.shortcuts import render
 from  . import models
+from django.views import generic
 
-def all_category_book(request):
-    if request.method == 'GET':
-        query = models.Product.objects.all()
-        return render(request,
-        template_name='tags/all_category_book.html',
-        context={'query': query}
-                      )
 
-def for_children_category_book(request):
-    if request.method == 'GET':
-        query = models.Product.objects.all().filter(tags__name='Книги для детей')
-        return render(request,
-                      template_name='tags/for_children_category_book.html',
-                      context={'query': query}
-                      )
+class AllCategoryBookView(generic.ListView):
+    model = models.Product
+    template_name = 'tags/all_category_book.html'
+    context_object_name = 'query'
 
-def for_teen_category_book(request):
-    if request.method == 'GET':
-        query = models.Product.objects.all().filter(tags__name='книги для подростков')
-        return render(request,
-                      template_name='tags/for_teen_category_book.html',
-                      context={'query': query}
-                      )
+
+
+class ForChildrenCategoryBookView(generic.ListView):
+    model = models.Product
+    template_name = 'tags/for_category_book.html'
+    context_object_name = 'query'
+
+    def get_queryset(self):
+        return models.Product.objects.filter(tags__name='Книги для детей')
+
+
+
+class ForTeenCategoryBookView(generic.ListView):
+    model = models.Product
+    template_name = 'tags/for_teen_category_book.html'
+    context_object_name = 'query'
+
+    def get_queryset(self):
+        return models.Product.objects.filter(tags__name='книги для подростков')

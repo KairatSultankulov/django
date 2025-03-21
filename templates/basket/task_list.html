@@ -15,7 +15,17 @@
 {% include 'components/header.html' %}
 
 <div class="container mt-4">
-    <h1 class="text-center">Список книг</h1>
+    <h1 class="text-center"></h1>
+        <h1 class="text-center">Корзина</h1>
+    </div>
+    <div class="search-basket">
+        <form action="{% url 'search_basket' %}" method="GET">
+            <input type="text" type="search" name="q" placeholder="Поиск в корзине">
+            <button class="search-button" type="submit" style="color: black; border-color: black;">
+                Поиск
+            </button>
+        </form>
+    </div>
     <div class="list-group">
         {% for i in task %}
             <div class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
