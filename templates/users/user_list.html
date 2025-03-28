@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список сотрудников библиотеки</title>
+</head>
+<body>
+
+<h1>Список сотрудников библиотеки</h1>
+<ol>
+  {% for i in user %}
+  <li>
+    <p>{{ i.username }}</p>
+    <p>{{ i.first_name }} {{ i.last_name }}</p>
+    <p>{{ i.experience }}</p>
+    {% if i.position %}
+    <p>Позиция сотрудника - {{ i.position }}</p>>
+    {% else %}
+    <p>Позиция не определена</p>>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ol>
+
+<form action="{% url 'users:logout' %}" method="POST">
+  {% csrf_token %}
+  <button type="submit">Выйти из аккаунта</button>
+</form>
+
+</body>
+</html>
