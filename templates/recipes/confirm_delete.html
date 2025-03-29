@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Удаление рецепта</title>
+</head>
+<body>
+
+<h1>Удалить рецепт?</h1>
+<p>Вы уверены, что хотите удалить "{{ object.title }}"?</p>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Удалить</button>
+</form>
+
+<a href="{% url 'recipe_list' %}">Отмена</a>
+
+</body>
+</html>

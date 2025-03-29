@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список рецептов</title>
+</head>
+<body>
+
+<h1>Список рецептов</h1>
+<ol>
+  {% for recipe in recipes %}
+  <li>
+    <p>Название: <a href="{% url 'recipe_detail' recipe.id %}">{{ recipe.title }}</a></p>
+    <form action="{% url 'delete_recipe' recipe.id %}" method="post" style="display:inline;">
+      {% csrf_token %}
+      <button type="submit">Удалить</button>
+    </form>
+  </li>
+  {% endfor %}
+</ol>
+
+<a href="{% url 'add_recipe' %}">Добавить рецепт</a>
+
+</body>
+</html>

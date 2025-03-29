@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74d574d5-2776-4650-83de-b0763de1ae42" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env-example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.git_ignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_app/admin_panel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipes/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipes/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipes/add_ingredient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipes/add_recipe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipes/confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipes/recipe_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipes/recipe_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/users/user_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/user_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_app/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../second_month" beforeDir="false" afterPath="$PROJECT_DIR$/../second_month" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -56,6 +68,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main_app" />
       <recent name="$PROJECT_DIR$/parser_app" />
       <recent name="$PROJECT_DIR$/templates" />
     </key>
@@ -89,7 +102,10 @@
       <workItem from="1742800280222" duration="895000" />
       <workItem from="1743098796282" duration="6369000" />
       <workItem from="1743148263548" duration="6483000" />
-      <workItem from="1743154826689" duration="596000" />
+      <workItem from="1743154826689" duration="1026000" />
+      <workItem from="1743162629435" duration="110000" />
+      <workItem from="1743163118803" duration="781000" />
+      <workItem from="1743251456886" duration="6300000" />
     </task>
     <servers />
   </component>
